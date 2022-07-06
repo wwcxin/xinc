@@ -11,6 +11,85 @@ body {
     background-size: cover;
 }
 
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: cadetblue;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+/* 下面是搜索框样式 */
+.searchBox {
+    width: 82%;
+    height: 35px;
+    border: 1px solid cadetblue;
+    outline: hidden;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inputBox {
+    border: none;
+    width: 80%;
+    height: 26px;
+    line-height: 35px;
+    outline: none;
+    padding-left: 8px;
+    caret-color: #008B8B;
+    font-size: 14px;
+}
+
+.searchBtn {
+    width: 76px;
+    height: 33px;
+    border: none;
+    position: absolute;
+    right: 0;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    background-color: cornflowerblue;
+}
+
+/* 鼠标滑过按钮时背景色改变 */
+.searchBtn:hover {
+    background-color: #497fdf;
+}
+
+#M1:hover {
+    background-color: pink;
+}
+
+#M1 {
+    width: 100px;
+    height: 36px;
+    padding-top: 2px\9;
+    /* cursor: pointer; */
+    color: #fff;
+    font-size: 15px;
+    /* letter-spacing: 1px; */
+    background: #3385ff;
+    /* border-bottom: 1px solid #2d78f4; */
+    /* outline: medium; */
+    *: ;
+    border-bottom: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 7px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 h1 {
     font-size: 36px;
     margin-bottom: .5em;
