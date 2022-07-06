@@ -11,86 +11,8 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico"  />
-    <style> 
-body{background-image:url(https://iw233.cn/api.php?sort=pc); 
-background-repeat:no-repeat;background-position:center} 
-.title{
-            text-align: center;
-            font-size: 25px;
-            font-weight: bold;
-            color: cadetblue;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            font-family: fantasy;
-        }
-
-        /* 下面是搜索框样式 */
-        .searchBox{
-            width: 82%;
-            height: 35px;
-            border: 1px solid cadetblue;
-            outline: hidden;
-            border-radius: 2px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .inputBox{
-                border: none;
-    width: 80%;
-    height: 26px;
-    line-height: 35px;
-    outline: none;
-    padding-left: 8px;
-    caret-color: #008B8B;
-    font-size: 14px;
-        }
-
-        .searchBtn{
-            width: 76px;
-    height: 33px;
-    border: none;
-    position: absolute;
-    right: 0;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    background-color: cornflowerblue;
-        }
-
-        /* 鼠标滑过按钮时背景色改变 */
-        .searchBtn:hover{
-            background-color: #497fdf;
-        }
-        #M1{
-        	width: 100px;
-    height: 36px;
-    padding-top: 2px\9;
-    /* cursor: pointer; */
-    color: #fff;
-    font-size: 15px;
-    /* letter-spacing: 1px; */
-    background: #3385ff;
-    /* border-bottom: 1px solid #2d78f4; */
-    /* outline: medium; */
-    *: ;
-    border-bottom: none;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border: 0;
-        text-align: center;
-    text-decoration:none;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-        padding: 7px;
-        float: left;
-        margin-left: 2%;     
-        margin-top: 2%;
-        }
-</style> 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="icon" href="favicon.ico" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 </head>
 
 <body>
@@ -98,15 +20,15 @@ background-repeat:no-repeat;background-position:center}
         <div class="row my-card justify-content-center">
             <div class="col-lg-4 photo-bg"></div>
             <div class="col-lg-8 card">
-            	
-                
-<div class="searchBox">
-	<form action="http://www.baidu.com/baidu" target="_blank">
-    <input name="tn" type="hidden" value="baidu">
-    <input  class="inputBox" type="text" name="word" size="30" placeholder="www.wwcx.cc">
-    <input  class="searchBtn" type="submit" value="百度搜索">
-    </form>
-</div>
+
+
+                <div class="searchBox">
+                    <form action="https://cn.bing.com/search" target="_blank">
+                        <!-- <input name="tn" type="hidden" value="baidu"> -->
+                        <input class="inputBox" type="text" name="q" size="30" placeholder="www.wwcx.cc">
+                        <input class="searchBtn" type="submit" value="必应搜索">
+                    </form>
+                </div>
 
                 <br><br>
                 <p>
@@ -115,26 +37,29 @@ background-repeat:no-repeat;background-position:center}
                 </p>
                 <br><br>
 
-                                <p>常用链接:</p>
+                <p>常用链接:</p>
 
-                
-                
-                
-               <div width="100px" height="100px">
-               	
-               	<a href="https://www.x6d.com/" target="_blank" id="M1">小刀娱乐网</a>&nbsp;
-               	<a href="https://www.ddos-sb.cc/" target="_blank" id="M1" style="background-color: #af00ff;">初心の主页</a>
-               	<a href="https://www.wwcx.cc/" target="_blank" id="M1" style="background-color: #2ed000;">初心のBlog</a>
-               	<a href="https://year.xinc.cc/" target="_blank" id="M1" style="background-color: #09c5de;">新年倒计时</a>
-               	<a href="https://www.kivibot.com/" target="_blank" id="M1" style="background-color: #ff7a7a;">KiviBot</a>
-                <a href="#" id="M1" style="background-color: #d4a40a;">友链位</a>
-               	<a href="#" id="M1" style="background-color: #444444;">友链位</a>
-               	
-               </div>
-               
+
+
+
+                <div width="100px" height="100px">
+
+                    <a href="https://www.x6d.com/" target="_blank" id="M1" class="Links">小刀娱乐网</a>&nbsp;
+                    <a href="https://www.ddos-sb.cc/" target="_blank" id="M1" class="Links"
+                        style="background-color: #af00ff;">初心の主页</a>
+                    <a href="https://www.wwcx.cc/" target="_blank" id="M1" class="Links"
+                        style="background-color: #2ed000;">初心のBlog</a>
+                    <a href="https://year.xinc.cc/" target="_blank" id="M1" class="Links" style="background-color: #09c5de;">新年倒计时</a>
+                    <a href="https://www.kivibot.com/" target="_blank" id="M1" class="Links"
+                        style="background-color: #ff7a7a;">KiviBot</a>
+                    <a href="#" id="M1" class="Links" style="background-color: #d4a40a;">友链位</a>
+                    <a href="#" id="M1" class="Links" style="background-color: #444444;">友链位</a>
+
+                </div>
+
                 <!--<input type="submit" id="M1" value="百度一下" class="bg s_btn">-->
 
-               <h4 class="mt-4">or</h4>
+                <h4 class="mt-4">or</h4>
                 <ul class="social mt-1">
                     <!--<li><a href="https://www.x6k.com/"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>-->
                     <li><a href="https://github.com/wwcxin/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
@@ -147,9 +72,11 @@ background-repeat:no-repeat;background-position:center}
         </div>
         <div class="footer">
             <footer class="mt-3">
-<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278686381'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278686381%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                <script
+                    type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278686381'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278686381%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
             </footer>
         </div>
     </div>
 </body>
+
 </html>
