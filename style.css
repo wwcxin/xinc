@@ -4,7 +4,7 @@ body {
     background-color: #ebf1f5;
     height: 100vh;
     min-height: 800px;
-    background-image: url(https://dev.iw233.cn/api.php?sort=pc);
+    background-image: url(https://cloud.kivibot.com:128/preview.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -183,7 +183,7 @@ strike {
 
 .photo-bg {
     /* background-image: url(assets/background.jpg); */
-    background-image: url(https://bt.ddos-sb.cc:128/i/2022/07/05/62c3cc1fea1d2.png);
+    background-image: url(https://cloud.kivibot.com:128/preview.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
