@@ -4,7 +4,7 @@ body {
     background-color: #ebf1f5;
     height: 100vh;
     min-height: 800px;
-    background-image: url(https://cloud.kivibot.com:128/preview.jpg);
+    background-image: url(https://cloud.kivibot.com:128/96CA3F2466AA56756595BBFF29C6E151.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -20,6 +20,44 @@ body {
     margin-bottom: 20px;
     font-family: fantasy;
 }
+
+
+
+/* 打印字
+.typing {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    width: 21em;
+    height: 1.5em;
+    border-right: 1px solid transparent;
+    animation: typing 3s steps(12, end), blink-caret .9s step-end infinite;
+    font-family: Consolas, Monaco;
+    word-break: break-all;
+    overflow: hidden;
+}
+/* 打印效果 */
+/* @keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 15em;
+    }
+} */
+
+/* 光标 */
+/* @keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+} */
 
 /* 下面是搜索框样式 */
 .searchBox {
@@ -183,7 +221,7 @@ strike {
 
 .photo-bg {
     /* background-image: url(assets/background.jpg); */
-    background-image: url(https://cloud.kivibot.com:128/preview.jpg);
+    background-image: url(https://cloud.kivibot.com:128/74AB8AA0EB09CAD6A1EFE726D015B2AB.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
