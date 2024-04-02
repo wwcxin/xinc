@@ -1,102 +1,195 @@
-<!DOCTYPE html>
-<html lang="">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>汐汐の主页 - www.xinc.cc</title>
-    <meta name="description" content="汐汐">
-    <meta name="keywords" content="xinc">
-    <link rel="icon" type="image/ico" href="//gravatar.eas1.cn/avatar/4cc893d113dd74ceca73f9863f2c5446/">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    <script type="text/javascript" src="text.js"></script>
-</head>
-
-<body>
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>《初心の站点》 - xinc.cc</title><meta name="author" content="勿忘初心"><meta name="copyright" content="勿忘初心"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="我的青春回头看了我一眼 仿佛在向我道别.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="《初心の站点》">
+<meta property="og:url" content="https://www.xinc.cc/index.html">
+<meta property="og:site_name" content="《初心の站点》">
+<meta property="og:description" content="我的青春回头看了我一眼 仿佛在向我道别.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png">
+<meta property="article:author" content="勿忘初心">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png"><link rel="shortcut icon" href="https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/avatar3.c9d108f1.png"><link rel="canonical" href="https://www.xinc.cc/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《初心の站点》',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-04-02 03:48:17'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
     
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
 
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
 
-    <div id="main" class="container">
-        <div class="row my-card justify-content-center">
-            <div class="col-lg-4 photo-bg"></div>
-            <div class="col-lg-8 card">
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://webcnstatic.yostar.net/ba_cn_web/prod/upload/wallpaper/ffJ4RBzt.jpeg')"><nav id="nav"><span id="blog-info"><a href="/" title="《初心の站点》"><img class="site-icon" src="https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/avatar4.8656c817.png"/><span class="site-name">《初心の站点》</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><video src="https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/home2.4f8bd50e.mp4" autoplay="" loop="" muted="" style="min-height:100%;height:100%;width:100%;object-fit:cover"></video><div id="site-info"><h1 id="site-title">《初心の站点》</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2024/04/01/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-01T09:27:46.841Z" title="发表于 2024-04-01 09:27:46">2024-04-01</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
+More info: Writing
+Run server1$ hexo server
 
-                <div class="searchBox">
-                    <form action="https://cn.bing.com/search" target="_blank">
-                        <!-- <input name="tn" type="hidden" value="baidu"> -->
-                        <input class="inputBox" type="text" name="q" size="30" placeholder="www.xinc.cc">
-                        <input class="searchBtn" type="submit" value="必应搜索">
-                    </form>
-                </div>
+More info: Server
+Generate static files1$ hexo generate
 
-                <br>
-                <div style="height: 200px;">
-                    <div id="myContent"></div>
-                    <div id="contentToWrite" style="display:none;height:200px;"> 世界不会辜负努力拼搏的人<br>光明的前途在乌云散去之后<br>请一定坚持自己勿忘初心<br>要做会发光的星星<br>成为想成为的大人<br>初次见面，正在人间奋斗的你<br>Be a glowing star and become the adult you want to be.</div>
-                
-                    <script type="text/javascript"> writeContent(true); </script>
-                </div>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-                <p>常用链接:</p>
-
-                <div width="100px" height="100px">
-
-                    <a href="https://www.x6d.com/" target="_blank" id="M1" class="Links">小刀娱乐网</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #af00ff;">初心の主页</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #2ed000;">初心のBlog</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #09c5de;">初心の图床</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #ff7a7a;">新年倒计时</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #d4a40a;">友链位</a>&nbsp;
-                    <a href="#" target="_blank" id="M1" class="Links" style="background-color: #444444;">友链位</a>&nbsp;
-
-                </div>
-
-                <!--<input type="submit" id="M1" value="百度一下" class="bg s_btn">-->
-
-                <h4 class="mt-4">or</h4>
-                <ul class="social mt-1">
-                    <!--<li><a href="https://www.x6k.com/"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>-->
-                    <li><a href="https://github.com/wwcxin/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                    <!--<li><a href="#"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>-->
-                    <!--<li><a href="#"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>-->
-                </ul>
-                <p><a href="https://icp.gov.moe/?keyword=20223329" target="_blank"><img height="25" src="https://cloud.kivibot.com:128/icon120.png">萌ICP备20223329号</a></p>
-            </div>
-        </div>
-        <div class="footer">
-            <footer class="mt-3">
-                <script
-                    type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278686381'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1278686381%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-            </footer>
-        </div>
-    </div>
-    <!--<script src="https://cloud.kivibot.com:128/live2d/jr/TweenLite.js"></script>
-    <script src="https://cloud.kivibot.com:128/live2d/jr/live2dcubismcore.min.js"></script>
-    <script src="https://cloud.kivibot.com:128/live2d/jr/pixi.min.js"></script>
-    <script src="https://cloud.kivibot.com:128/live2d/jr/cubism4.min.js"></script>
-    <link href="https://cloud.kivibot.com:128/live2d/jr/pio.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cloud.kivibot.com:128/live2d/jr/pio.js"></script>
-    <script src="https://cloud.kivibot.com:128/live2d/jr/pio_sdk4.js"></script>
-    <script src="http://cloud.kivibot.com:128/live2d/load.js"></script>
-    -->
-   
-<script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/TweenLite.js"></script>
-<script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.6/dist/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.3.1/dist/cubism4.min.js"></script>
-<link href="https://cloud.kivibot.com:128/live2d/pio.css" rel="stylesheet" type="text/css"/>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/pio_sdk4.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@76ba2b3/live2d/lib/load.js"></script>
-
-
-
-</body>
-
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://webcnstatic.yostar.net/ba_cn_web/prod/web/favicon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">勿忘初心</div><div class="author-info__description">我的青春回头看了我一眼 仿佛在向我道别.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2024/04/01/hello-world/" title="Hello World">Hello World</a><time datetime="2024-04-01T09:27:46.841Z" title="发表于 2024-04-01 09:27:46">2024-04-01</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-04-02T03:48:17.208Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 勿忘初心</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["我的青春回头看了我一眼&#44;仿佛在向我道别","Welcome"])
+  } else {
+    document.getElementById("subtitle").textContent = "我的青春回头看了我一眼&#44;仿佛在向我道别"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
