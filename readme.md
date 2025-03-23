@@ -23,7 +23,6 @@ Xinc 是一个基于 NapCat 和 node-napcat-ts 的轻量级 QQ 机器人框架�
 ```bash
 mkdir my-xinc-bot
 cd my-xinc-bot
-npm init -y
 npm install xinc
 npx xinc init
 ```
