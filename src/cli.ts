@@ -36,6 +36,11 @@ program
   .description('Xinc Bot 命令行工具')
   .version(packageInfo.version)
 
+// 获取 xinc 包安装路径下的文件
+const getPackagePath = (relativePath: string) => {
+  return path.join(__dirname, relativePath);
+}
+
 // 初始化项目
 program
   .command('init')
@@ -171,7 +176,7 @@ program
 program
   .command('start')
   .description('启动 Xinc Bot')
-  .option('-pm2', '使用 PM2 在后台运行')
+  .option('--pm2', '使用 PM2 在后台运行')
   .action(async (options) => {
     if (!fs.existsSync('xinc.config.toml')) {
       console.log(chalk.red('❌ 找不到配置文件，请先运行 xinc init 进行初始化'))
@@ -211,9 +216,7 @@ program
         const pm2Config = `module.exports = {
   apps: [{
     name: '${instanceName}',
-    script: 'src/index.ts',
-    interpreter: 'node',
-    interpreter_args: '-r ts-node/register',
+    script: '${getPackagePath('index.js')}',
     watch: false,
     max_memory_restart: '200M',
     env: {
@@ -261,7 +264,7 @@ program
     } else {
       // 直接启动
       console.log(chalk.cyan('🚀 正在启动 Xinc Bot...'))
-      const child = spawn('ts-node', ['src/index.ts'], {
+      const child = spawn('node', [getPackagePath('index.js')], {
         stdio: 'inherit',
         shell: true
       })

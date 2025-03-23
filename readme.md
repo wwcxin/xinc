@@ -32,7 +32,7 @@ npx xinc init
 # 直接启动
 npx xinc start
 # 或者使用 PM2 在后台运行
-npx xinc start -pm2
+npx xinc start --pm2
 ```
 
 ## 🚀 快速开始

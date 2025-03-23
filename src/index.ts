@@ -3,6 +3,12 @@ import { definePlugin, Structs } from './core/plugin'
 
 // 导出插件系统
 export { definePlugin, Structs }
+// src/index.ts
+export * from './core/plugin';
+export * from './napcat/Structs';
+export * from './core/Logger';
+export * from './core/config';
+export * from './core/App';
 
 const main = async () => {
   const app = new App()

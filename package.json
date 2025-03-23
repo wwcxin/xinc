@@ -1,17 +1,27 @@
 {
   "name": "xinc",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "基于napcat,node-napcat-ts的bot框架",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "xinc": "./dist/cli.js"
+  },
   "scripts": {
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huankong-team/node-napcat-ts.git"
+    "url": "git+https://github.com/wwcxin/xinc.git"
   },
   "keywords": [
     "napcat",
@@ -26,9 +36,9 @@
   "author": "勿忘初心❤️",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/huankong-team/node-napcat-ts/issues"
+    "url": "https://github.com/wwcxin/xinc/issues"
   },
-  "homepage": "https://github.com/huankong-team/node-napcat-ts#readme",
+  "homepage": "https://github.com/wwcxin/xinc#readme",
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "chalk": "^4.1.2",
