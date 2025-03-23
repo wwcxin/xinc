@@ -1,0 +1,7 @@
+host = "192.168.10.102"
+port = 4001
+prefix = "#"
+root = [2319289456]
+admins = []
+plugins = ["你好世界"]
+logger = "info"

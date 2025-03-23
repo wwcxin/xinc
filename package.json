@@ -1,0 +1,51 @@
+{
+  "name": "xinc",
+  "version": "0.0.1",
+  "description": "基于napcat,node-napcat-ts的bot框架",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huankong-team/node-napcat-ts.git"
+  },
+  "keywords": [
+    "napcat",
+    "xinc",
+    "bot",
+    "xincbot",
+    "node-napcat-ts",
+    "qqbot",
+    "QQbot",
+    "QQ机器人"
+  ],
+  "author": "勿忘初心❤️",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/huankong-team/node-napcat-ts/issues"
+  },
+  "homepage": "https://github.com/huankong-team/node-napcat-ts#readme",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "chalk": "^4.1.2",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.5.0",
+    "isomorphic-ws": "^5.0.0",
+    "nanoid": "^5.1.5",
+    "nanospinner": "^1.2.2",
+    "node-napcat-ts": "^0.4.9",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.0",
+    "@types/ws": "^8.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
