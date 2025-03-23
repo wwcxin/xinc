@@ -119,8 +119,8 @@ logger = "info"
 详情请参阅 [LICENSE](LICENSE) 文件。
 
 ## 致谢
-- [NapCat](https://github.com/wwcxin/napcat) 
-- 底层通信框架- [node-napcat-ts](https://github.com/wwcxin/node-napcat-ts) 
+- [NapCat](https://github.com/NapNeko/NapCatQQ) 
+- 底层通信框架- [node-napcat-ts](https://github.com/huankong-team/node-napcat-ts) 
 - kivibot
 - Node.js 
 
