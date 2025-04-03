@@ -19,11 +19,6 @@ const main = async () => {
     process.exit(0)
   })
 
-  process.on('SIGTERM', async () => {
-    await app.stop()
-    process.exit(0)
-  })
-
   // 捕获未处理的异常
   process.on('uncaughtException', async (error) => {
     console.error('未捕获的异常:', error)
