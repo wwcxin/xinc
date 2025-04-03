@@ -196,6 +196,19 @@ export class PluginManager {
         return `https://p.qlogo.cn/gh/${group_id}/${group_id}/640/`;
       },
       
+      // 获取被引用的消息详细
+      getQuoteMessage: async (e: any) => {
+        if (!e || !e.message) return null;
+        try {
+          const reply = e.message.find((msg: any) => msg.type === 'reply');
+          if (!reply) return null;
+          const msg = await this.api.get_msg({ message_id: reply.data.id });
+          return msg;
+        } catch (error) {
+          return null;
+        }
+      },
+
       // 新增: 获取消息文本内容
       getText: (e: any) => {
         // 处理消息数组
@@ -216,6 +229,29 @@ export class PluginManager {
         for (const segment of e.message) {
           if (segment.type === 'image' && segment.data && segment.data.url) {
             return segment.data.url;
+          }
+        }
+        return null;
+      },
+
+      // 新增: 获取消息中提及到的图片URL（消息或被引用消息中的图片）
+      getQuoteImageURL: async (e: any) => {
+        if (!e || !e.message) return null;
+        try {
+          const reply = e.message.find((msg: any) => msg.type === 'reply');
+          if (!reply) return null;
+          const msg = await this.api.get_msg({ message_id: reply.data.id });
+
+          for (const segment of msg.message) {
+            if (segment.type === 'image' && segment.data && segment.data.url) {
+              return segment.data.url;
+            }
+          }
+        } catch {
+          for (const segment of e.message) {
+            if (segment.type === 'image' && segment.data && segment.data.url) {
+              return segment.data.url;
+            }
           }
         }
         return null;
@@ -417,7 +453,7 @@ export class PluginManager {
       },
       
       // 新增: 发送好友赞
-      sendLike: async (user_id: number, times: number = 1) => {
+      sendLike: async (user_id: number, times: number = 50) => {
         await this.api.send_like({
           user_id: user_id,
           times: times
@@ -429,6 +465,46 @@ export class PluginManager {
         const result = await this.api.get_version_info();
         return result;
       },
+
+      // 新增: 设置qq个性签名
+      setSignature: async (signature: string) => {
+        await this.api.set_self_longnick({
+          longNick: signature 
+        });
+      },
+
+      // 新增: 设置QQ性别
+      setSex: async (sex: number) => {
+        const botInfo = await this.api.get_login_info();
+
+        await this.api.set_qq_profile({
+          nickname: botInfo.nickname,
+          sex: sex
+        });
+      },
+      
+      // 新增: 判断bot是否是群主
+      botIsGroupOwner: async (e: any) => {
+        const botId = (await this.api.get_login_info()).user_id;
+        const result = await this.api.get_group_member_info({
+          group_id: e.group_id,
+          user_id: botId,
+          no_cache: false
+        });
+        return result.role === 'owner';
+      },
+
+      // 新增: 判断bot是否是群管理员
+      botIsGroupAdmin: async (e: any) => {
+        const botId = (await this.api.get_login_info()).user_id;
+        const result = await this.api.get_group_member_info({
+          group_id: e.group_id,
+          user_id: botId,
+          no_cache: false
+        });
+        return result.role === 'admin' || result.role === 'owner';
+      },
+
     }
   }
 

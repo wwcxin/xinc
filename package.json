@@ -1,6 +1,6 @@
 {
   "name": "xinc",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "description": "基于napcat,node-napcat-ts的bot框架",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

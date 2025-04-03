@@ -77,6 +77,9 @@ export interface PluginContext {
   /** 获取群头像URL */
   getGroupAvatarURL: (group_id: number) => string
   
+  /** 获取被引用的消息详细 */
+  getQuoteMessage: (e: any) => Promise<any>
+
   /**
    * 获取消息文本内容
    */
@@ -84,6 +87,9 @@ export interface PluginContext {
   
   /** 获取消息中的图片URL */
   getImageURL: (e: any) => string | null
+  
+  /** 获取消息中提及到的图片URL（消息或被引用消息中的图片） */
+  getQuoteImageURL: (e: any) => Promise<any>
   
   /** 获取消息中@的用户QQ号 */
   getAtUserID: (e: any) => number | null
@@ -149,6 +155,18 @@ export interface PluginContext {
   
   /** 获取版本信息 */
   getVersionInfo: () => Promise<VersionInfo>
+
+  /** 设置QQ个性签名 */
+  setSignature: (signature: string) => Promise<void>
+
+  /** 设置QQ性别 */
+  setSex: (sex: number) => Promise<void>
+
+  /** 判断bot是否是群主 */
+  botIsGroupOwner: (e: any) => Promise<boolean>
+
+  /** 判断bot是否是群管理员 */
+  botIsGroupAdmin: (e: any) => Promise<boolean>
 }
 
 /** 插件元数据 */
