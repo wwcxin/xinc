@@ -453,18 +453,12 @@ export class PluginManager {
       },
       
       // 新增: 发送好友赞
-      sendLike: async (user_id: number, times: number = 50) => {
+      sendLike: async (user_id: number, times: number = 20) => {
         // 使用call方法获取完整响应
         const result = await this.api.send_like({
           user_id: user_id,
           times: times
         });
-        
-        // 如果失败，日志记录错误信息
-        if (result.retcode !== 0) {
-          this.logger.warn(`发送好友赞失败: ${result.message}`);
-        }
-        
         return result; // 返回完整响应
       },
       
