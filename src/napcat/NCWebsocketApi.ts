@@ -52,10 +52,10 @@ export class NCWebsocketApi extends NCWebsocketBase {
 
   /**
    * @onebot11
-   * 点赞
+   * 点赞（完整响应）
    */
   send_like(params: WSSendParam['send_like']) {
-    return this.send('send_like', params)
+    return this.call('send_like', params)
   }
 
   /**

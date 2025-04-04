@@ -235,6 +235,66 @@ export class NCWebsocketBase {
   }
 
   /**
+   * 发送API请求并返回完整响应
+   * @param method API 端点
+   * @param params 请求参数
+   */
+  call<T extends keyof WSSendParam>(method: T, params: WSSendParam[T]) {
+    const echo = nanoid()
+
+    const message: APIRequest<T> = {
+      action: method,
+      params: params,
+      echo,
+    }
+
+    if (this.#debug) {
+      logger.debug('[node-open-napcat] send request')
+      logger.dir(message)
+    }
+
+    return new Promise<any>((resolve, reject) => {
+      const onSuccess = (response: any) => {
+        this.#echoMap.delete(echo)
+        return resolve(response) // 返回完整响应
+      }
+
+      const onFailure = (reason: any) => {
+        this.#echoMap.delete(echo)
+        return resolve(reason) // 失败时也返回响应而不是reject
+      }
+
+      this.#echoMap.set(echo, {
+        message,
+        onSuccess,
+        onFailure,
+      })
+
+      this.#eventBus.emit('api.preSend', message)
+
+      if (this.#socket === undefined) {
+        reject({
+          status: 'failed',
+          retcode: -1,
+          data: null,
+          message: 'api socket is not connected',
+          echo: '',
+        })
+      } else if (this.#socket.readyState === WebSocket.CLOSING) {
+        reject({
+          status: 'failed',
+          retcode: -1,
+          data: null,
+          message: 'api socket is closed',
+          echo: '',
+        })
+      } else {
+        this.#socket.send(JSON.stringify(message))
+      }
+    })
+  }
+
+  /**
    * 注册监听方法
    * @param event
    * @param handle
